@@ -18,7 +18,7 @@ function Home() {
         `/?apikey=${APIKey} &s=${movieText}&type=movie`
       ).catch((err) => console.log("err is", err));
       dispatch(addMovies(res.data));
-      console.log(res.data.Search);
+      
     };
     fetchMovies()
   }, []);
